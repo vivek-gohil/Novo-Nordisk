@@ -1,0 +1,263 @@
+Object Oriented Programming
+
+What is Class ?
+	Blueprint to create object.
+
+
+class Employee {
+	//Variables
+	int employeeId
+	String firstName
+	String lastName
+	float salary
+
+	//Function
+	calculateSalary() {
+		basic + HRA + Travel
+	}
+}
+
+class Account {
+	accountNumber
+	name
+	branch
+	ifsc
+	balance
+}
+
+What is Object ? 
+
+Employee ramya = new Employee();
+ramya.employeeId = 101
+ramya.firstName = Ramya
+ramya.lastName = ...
+ramya.salary = 9999999
+
+Data Types In Java
+1. Primitive Data Types
+	byte
+	char
+	int
+	long
+	float
+	double
+	boolean
+	
+	int employeeId = 101;
+	int employeeId = new int(); //Error 
+2. Non-Primitive/ Reference Type
+	String
+	Array
+	Class
+	Interface
+	Collections 
+
+	String firstName = new String("Novo Nordisk");
+
+
+class AdditionMain {
+
+	public static void main(String args[]) {
+		//accept two number 
+
+		//declaration
+		int n1,n2;
+		
+		//initialization
+		n1 = 10;
+		n2 = 20;
+		
+		Addition addObject = new Addition();
+		addObject.accept(n1,n2);
+		
+	
+	}
+}
+
+domain
+class Addition {	
+	public void accept(int n1 , int n2){
+		sysout(n1); // 10
+		sysout(n2); // 20
+	}
+
+}
+
+
+Create two classes as 
+	Circle and CircleMain
+Circle ::
+	Create a method/function as area which accept radius as parameter
+	and print area of circle (3.14 * r * r)
+
+CircleMain ::
+	Call area function by creating object of Circle class.
+
+
+
+Create class Account and AccountMain
+
+Account 
+	display(int accountNumber,String name,double balance)
+	{
+		//display accountNumber
+		//display name
+		//display balance
+	}
+
+AccountMain
+	main method
+		declare 3 variables for accountNumber,name,balance
+		Create object of Scanner class
+		accept account number
+		accept name
+		accept balance
+		Create object of Account class and call display method
+
+
+
+
+
+
+
+
+
+
+
+Post Lunch :: 1:15 PM 
+
+1. Accept value from user - Scanner Class
+2. Functions 
+	a. Function With Parameter
+	b. Function With Return Type
+3. Condition Statements
+	a. If Else
+	b. Nested If
+	c. Switch Case
+
+class NumberUtil {
+	public int getSquareOfNumber(int number){
+		int result = number * number;
+		return result;
+	}
+}
+class NumberUtilMain {
+	public static void main(String args[]) {
+		
+		int number;
+		Sysout("Enter number");
+		Scanner scanner = new Scanner(System.in);
+		number = scanner.nextInt(); //3
+
+		NumberUtil numberUtil = new NumberUtil();
+		int output = numberUtil.getSquareOfNumber(number);
+		Sysout("Result " + output);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+int number = 10;
+
+if(number%2 == 0) {
+	Sysout("Even Number") 
+}
+else
+	Sysout("Odd Number")
+
+
+
+
+Operators
+And = && 
+	T && T = T
+	T && F = F 
+OR = ||
+	T || T = T
+	T || F = T 
+
+Not = !
+
+
+LoginDetails and LoginDetailsMain
+
+LoginDetails
+	
+	public boolean validate(String username,String password) {
+		if(username.equals("admin") && password.equals("admin@123")
+			return true;
+		else
+			return false
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+LoginDetailsMain
+	1. Declare Two variables for username and password
+	2. Create Scanner class object
+	3. Accept username and password from user
+	4. Create object of LoginDetails class and call validate method
+	5. if validate method return true the print login successful
+	   else print login failed.
+
+
+
+NumberUtil and NumberUtilMain
+
+NumberUtil 
+	public int getLargest(int n1 ,int n2,int n3){
+		//logic
+		if ( (n1>n2) && (n1>n3) )
+		if n1 is greater than n2 and n3 
+			return n1;
+		if n2 is greater than n1 and n3
+			return n2;
+		else 
+			return n3;
+	}
+
+https://github.com/vivek-gohil/Novo-Nordisk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
