@@ -17,7 +17,10 @@ public static void main(String[] args) {
 	System.out.println("Enter n3");
 	n3 = scanner.nextInt();
 	
-	NumberUtil
-	int largest = 
+	NumberUtil numberUtil = new NumberUtil();
+	
+	int largest = numberUtil.getLargest(n1, n2, n3);
+	
+	System.out.println(largest);
 }
 }

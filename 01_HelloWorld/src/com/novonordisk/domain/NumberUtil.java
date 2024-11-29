@@ -9,5 +9,4 @@ public class NumberUtil {
 		else
 			return n3;
 	}
-
 }
