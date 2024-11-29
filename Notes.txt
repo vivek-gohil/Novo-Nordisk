@@ -34,7 +34,7 @@ ramya.lastName = ...
 ramya.salary = 9999999
 
 Data Types In Java
-1. Primitive Data Types
+1. Primitive Data Types - Call By Value
 	byte
 	char
 	int
@@ -45,7 +45,7 @@ Data Types In Java
 	
 	int employeeId = 101;
 	int employeeId = new int(); //Error 
-2. Non-Primitive/ Reference Type
+2. Non-Primitive/ Reference Type - Call By Refernce
 	String
 	Array
 	Class
@@ -236,6 +236,174 @@ NumberUtil
 
 https://github.com/vivek-gohil/Novo-Nordisk
 
+1. Inheritance
+2. Polymorphism
+3. Abstract Class and Methods
+4. Interface
+5. Exception Handling
+
+
+
+
+
+
+
+Constructors = Object Creation
+0. To initialize the value to variables of class.
+1. It has a same name as of class.
+2. It will get called automatically , at the time of object creation.
+3. It dose not have return type.
+
+class Demo {
+	public Demo() {
+		Sysout("In Constructor");
+	}
+
+	public void greet(){
+		Sysout("Hi")
+	}
+}
+class DemoMain {
+	main() {
+		Demo demo = new Demo();//In Constructor
+		demo.greet(); //Hi
+
+		Demo demo2 = new Demo(); // In Constructor
+	}
+}
+
+
+
+
+
+
+
+
+
+
+Notes For Creating Domain Class
+	1. Variables	
+	2. Default Constructor
+	3. Parameter Constructor
+	4. Setter
+	5. Getter
+
+Loops
+	1. Do While
+	2. While
+	3. For
+	4. For Each
+Array
+
+
+Do While
+
+do 
+{
+	//code
+}
+while(condition);
+
+While
+
+while(condition) {
+	//code
+}
+
+
+Choose Your Format
+1. Download PFD
+2. Download XLS
+3. Download CSV
+Enter your choice
+<choice>
+
+
+
+
+
+
+
+class Shape {
+	draw() {
+		drawing shape
+	}
+}
+
+class Triangle extends Shape {
+	draw() {
+		drawing triangle
+	}
+}
+class Circle extends Shape {
+	draw() {
+		drawing circle
+	}
+}
+
+main() {
+	Shape shape = null;
+	...
+	shape = new Circle();
+	shape.draw();
+
+}
+
+
+
+
+
+class A {
+	public void greet() {
+		Hi
+	}
+}
+class B extends A {
+	public void greet() {
+		Hello
+	}
+}
+class MyMain {
+	main() {
+		A a = new B();
+		a.greet();
+	}
+}
+Abstract Class and Method
+
+Why Abstract Class ?
+
+Abstract class Account {
+	private int accountNumber;
+
+	public abstract void withdraw(double amount);
+
+	public abstract void deposit(double amount);
+
+	public int getAccountNumber() {
+		return accountNumber;
+	}
+	public void setAccountNumber(int accountNumber)	{
+		this.accountNumber = accountNumber;
+	}
+}
+
+class Savings extends Account {
+	withdraw
+	deposit
+}
+
+
+
+
+
+
+
+
+class Savings extends Account {
+
+
+}
 
 
 
@@ -249,6 +417,301 @@ https://github.com/vivek-gohil/Novo-Nordisk
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+abstract class Shape {
+		public void greet()  {
+		Hi
+	}
+
+}
+
+class Line extends Shape{
+	public void draw() {
+		...
+	}
+}
+class Triangle exnteds Shape {
+	public void draw() {
+		
+	}
+}
+class Circle {
+}
+
+
+
+
+
+
+
+
+
+ShapeMain {
+	main() {
+		Shape shape = new Shape() // Error
+	}
+}
+
+
+
+
+
+
+
+
+A {
+
+}
+B  {
+
+}
+C extends A  {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+abstract class A {
+	public abstract void print();
+}
+
+
+abstract class Demo {
+	public void show() {
+		"Hi"
+	}
+	public void print() {
+		"Hello"
+	}
+	public abstract void greet();
+}
+class MyClass extends Demo {
+	public void show() {
+		"Good Morning"
+	}
+	public void greet() {
+		"Good Evening"
+	}
+}
+
+abstract class MyClass {
+	public abstract void print();
+	public abstract void display();
+}
+class Demo extends MyClass {
+	public void greet() {
+		
+	}
+	public void print() {
+		"Hi"
+	}
+	public void display() {
+		"Hello"
+	}
+
+}
+class User extends MyClass {
+	public void print() {
+		"Good Morning"
+	}
+
+	public void display() {
+		"Good Afternoon"
+	}
+}
+
+
+
+
+
+abstract A {
+	public abstract void print();
+	public abstract void show();
+	public abstract void display();
+}
+class B extends A {
+	public void print() {
+		Hi
+	}
+	public void show() {
+	}
+	public void display() {
+	}
+}
+
+
+
+
+Interface - Pure Abstract
+
+public Interface MyInterface {
+	void print();
+}
+public Interface Demo {
+	void show()
+}
+
+public Interface Greet {
+	void display();
+}
+
+class MyClass implements MyInterface {
+	public void print() {
+		Hi
+	}
+}
+
+class User implements Greet , Demo {
+	public void show() {
+		Hi
+	}
+	public void display() {
+		Hi
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+interface A {
+	void print();
+}
+interface B {
+	void show();
+}
+class Demo implements A , B {
+	public void print() {
+		"Hi"
+	}
+}
+
+
+Exception Handling
+
+
+
+
+
+
+
+1. Call By Value
+2. Call By Reference
+
+class MyClass {
+	private int x = 10;	
+	public void setX(int x){
+		this.x = x;
+	}
+	public int getX() {
+		return x;
+	}
+}
+main() {	
+	MyClass myClass = new MyClass();
+	int x=15;
+	Sysout(myClass.getX());
+	Sysout(x);
+}
+
+class MyClass {
+	private int[] data;
+	
+	public void setData(int[] data) {
+		this.data = data;
+	}
+	
+	public int[] getData() {
+		return data;
+	}
+}
+main() {
+	MyClass myClass = new MyClass();
+	int [] numbers = new int[3];
+	numbers[0] = 11;
+	numbers[1] = 12;
+	numbers[2] = 13;
+}
+
+
+
+
+class MyClass {
+	private int [] data; // [10,11,12]
+	private double x; //0.0
+	
+	public int[] getData()
+		return data;
+
+	public void setData(int [] data) 
+		this.data = data;
+
+	public int getX()
+		return x;
+
+	public void setX(int x)
+		this.x=x
+}
+
+Collections Vs Arrays
+
+Collections = Dynamic in size.
+
+Youtube 
+Core Java :: https://www.youtube.com/watch?v=bm0OyhwFDuY&list=PLsyeobzWxl7pe_IiTfNyr55kwJPWbgxB5
+
+Spring and Spring Boot :: https://www.youtube.com/@Java.Brains/playlists
+
+https://www.javatpoint.com/java-tutorial
 
 
 
